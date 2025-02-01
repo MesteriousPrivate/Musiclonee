@@ -1,9 +1,10 @@
+from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton
 
 import config
 from SHUKLAMUSIC import app
 
-
+# Start panel for group
 def start_panel(_):
     buttons = [
         [
@@ -15,7 +16,7 @@ def start_panel(_):
     ]
     return buttons
 
-
+# Private panel
 def private_panel(_):
     buttons = [
         [
@@ -32,5 +33,12 @@ def private_panel(_):
         [
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
         ],
+    ]
+    return buttons
+
+# Clone bot start button
+def private_panel2(_):
+    buttons = [
+        [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")],
     ]
     return buttons

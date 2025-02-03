@@ -77,16 +77,16 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://envs.sh/mSV.jpg"
+    "START_IMG_URL", "https://envs.sh/Oap.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://envs.sh/mSV.jpg"
+    "PING_IMG_URL", "https://envs.sh/Oap.jpg"
 )
-PLAYLIST_IMG_URL = "https://envs.sh/mSV.jpg"
-STATS_IMG_URL = "https://envs.sh/mSV.jpg"
-TELEGRAM_AUDIO_URL = "https://envs.sh/mSV.jpg"
-TELEGRAM_VIDEO_URL = "https://envs.sh/mSV.jpg"
-STREAM_IMG_URL = "https://envs.sh/mSV.jpg"
+PLAYLIST_IMG_URL = "https://envs.sh/Oap.jpg"
+STATS_IMG_URL = "https://envs.sh/Oap.jpg"
+TELEGRAM_AUDIO_URL = "https://envs.sh/Oap.jpg"
+TELEGRAM_VIDEO_URL = "https://envs.sh/Oap.jpg"
+STREAM_IMG_URL = "https://envs.sh/Oap.jpg"
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"

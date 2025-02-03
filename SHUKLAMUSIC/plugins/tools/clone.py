@@ -39,7 +39,7 @@ CLONE_LOGGER = -1002321189618  # Replace with your actual logger ID
 
 CLONES = set()
 
-C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪt: @TheAadhiraBot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n• Uᴘᴅᴀᴛᴇ: @CREATIVEYDV\n• Sᴜᴘᴘᴏʀᴛ: @NYCREATION_CHATZONE"
+C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪt: @M4_Music_Bot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n• Uᴘᴅᴀᴛᴇ: @CREATIVEYDV\n• Sᴜᴘᴘᴏʀᴛ: @NYCREATION_CHATZONE"
 
 C_BOT_COMMANDS = [
     {"command": "/start", "description": "sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ"},

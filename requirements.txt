@@ -26,6 +26,7 @@ pornhub-api==0.3.0
 pycountry
 pycryptodome
 pydub
+pyrogram
 pyfiglet
 pykeyboard
 python-dotenv==1.0.1

@@ -148,7 +148,7 @@ async def clone_txt(client, message, _):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @mastiwithfriendsxd to get assistance**"
+                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @NYcreation_chatzone to get assistance**"
             )
     else:
         await message.reply_text("Please provide the bot token after the /clone command.")

@@ -9,11 +9,11 @@ from SHUKLAMUSIC.utils.database import add_served_chat, get_assistant
 
 
 start_txt = """**
-✪ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐍𝐘 𝐂𝐑𝐄𝐀𝐓𝐈𝐎𝐍'𝐒 𝐙𝐎𝐍𝐄 ✪
+◉ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɴᴏxx ᥊ ɴᴇᴛᴡᴏʀᴋ ◉
 
-➲ ᴇᴀsʏ ʜᴇʀᴏᴋᴜ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ✰  
-➲ ɴᴏ ʙᴀɴ ɪssᴜᴇs ✰  
-➲ ᴜɴʟɪᴍɪᴛᴇᴅ ᴅʏɴᴏs ✰  
+➲ ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ✰  
+➲ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴡɪᴛʜ sᴍᴏᴏᴛʜ ᴜɪ ✰  
+➲ ᴀᴅᴠᴀɴᴄᴇᴅ ɢᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴛᴏᴏʟs ✰  
 ➲ 𝟸𝟺/𝟽 ʟᴀɢ-ғʀᴇᴇ ✰
 
 ► sᴇɴᴅ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍs!
@@ -29,15 +29,15 @@ async def start(_, msg):
           InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{app.username}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("𝐍𝐚𝐧𝐝 𝐘𝐚𝐝𝐮𝐰𝐚𝐧𝐬𝐡𝐢", url="https://t.me/TMZEROO"),
-          InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/NYCreation_Chatzone"),
+          InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/TMZEROO"),
+          InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/NYCreation_Chatzone"),
           ],
                [
-                InlineKeyboardButton("ꜱᴇᴄᴏɴᴅ ʙᴏᴛ", url="https://t.me/M4_Music_Bot"),
+                InlineKeyboardButton("ꜱᴇᴄᴏɴᴅ ʙᴏᴛ", url="https://t.me/Music4vcbot?start=_tgr_ImDrXR4xZGNl"),
 
 ],
 [
-              InlineKeyboardButton("ᴍᴜsɪᴄ", url=f"https://t.me/Music_4_Sukoon"),
+              InlineKeyboardButton("ᴏᴜʀ ɴᴇᴛᴡᴏʀᴋs", url=f"https://t.me/NoxxNetwork"),
               InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/CreativeYdv"),
               ],
               [
@@ -83,7 +83,7 @@ async def add_allbot(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
         await message.reply(
-            "**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @WynkMusicRobot`**"
+            "**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @M4_Music_Bot`**"
         )
         return
 

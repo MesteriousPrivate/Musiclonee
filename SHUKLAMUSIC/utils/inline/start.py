@@ -39,6 +39,12 @@ def private_panel(_):
 # Clone bot start button
 def private_panel2(_):
     buttons = [
-        [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")],
+        [
+            InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")
+        ],
+        [
+            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
+        ],
     ]
     return buttons

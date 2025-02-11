@@ -23,7 +23,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @purvi_music_bot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID"))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "TMZEROO")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "Mrs_Shruti")
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -33,15 +33,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/YoMysterious/Sanatani",
+    "https://github.com/MesteriousPrivate/Blossom",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
-    "GIT_TOKEN", "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"
+    "GIT_TOKEN", ""
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/CreativeYdv")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/NYCreation_Chatzone")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ShrutiBots")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ShrutiBotSupport")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -78,16 +78,16 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://envs.sh/Oap.jpg"
+    "START_IMG_URL", "https://envs.sh/HN.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://envs.sh/Oap.jpg"
+    "PING_IMG_URL", "https://envs.sh/HN.jpg"
 )
-PLAYLIST_IMG_URL = "https://envs.sh/Oap.jpg"
-STATS_IMG_URL = "https://envs.sh/Oap.jpg"
-TELEGRAM_AUDIO_URL = "https://envs.sh/Oap.jpg"
-TELEGRAM_VIDEO_URL = "https://envs.sh/Oap.jpg"
-STREAM_IMG_URL = "https://envs.sh/Oap.jpg"
+PLAYLIST_IMG_URL = "https://envs.sh/HN.jpg"
+STATS_IMG_URL = "https://envs.sh/HN.jpg"
+TELEGRAM_AUDIO_URL = "https://envs.sh/HN.jpg"
+TELEGRAM_VIDEO_URL = "https://envs.sh/HN.jpg"
+STREAM_IMG_URL = "https://envs.sh/HN.jpg"
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"

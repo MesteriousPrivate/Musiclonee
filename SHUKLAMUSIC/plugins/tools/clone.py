@@ -25,7 +25,7 @@ from SHUKLAMUSIC.utils.database import get_assistant
 from SHUKLAMUSIC.utils.decorators.language import language
 
 # Define the clonebotdb
-client = MongoClient('mongodb+srv://kumarN:kumarN@kumarn.vxdui.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://rebesik896:Nand00000@cluster0.4cewp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 db = client['anonmusic']
 clonebotdb = db['clonebotdb']
 
@@ -39,7 +39,7 @@ CLONE_LOGGER = -1002321189618  # Replace with your actual logger ID
 
 CLONES = set()
 
-C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪt: @M4_Music_Bot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n• Uᴘᴅᴀᴛᴇ: @CREATIVEYDV\n• Sᴜᴘᴘᴏʀᴛ: @NYCREATION_CHATZONE"
+C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪt: @BlossomXMusicBot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n• Uᴘᴅᴀᴛᴇ: @ShrutiBots\n• Sᴜᴘᴘᴏʀᴛ: @NYCREATION_CHATZONE"
 
 C_BOT_COMMANDS = [
     {"command": "/start", "description": "sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ"},

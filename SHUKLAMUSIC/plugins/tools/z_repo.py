@@ -9,14 +9,14 @@ from SHUKLAMUSIC.utils.database import add_served_chat, get_assistant
 
 
 start_txt = """**
-◉ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɴᴏxx ᥊ ɴᴇᴛᴡᴏʀᴋ ◉
+◉ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sʜʀᴜᴛɪ's ᴡᴏʀʟᴅ ◉
 
 ➲ ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ✰  
 ➲ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴡɪᴛʜ sᴍᴏᴏᴛʜ ᴜɪ ✰  
 ➲ ᴀᴅᴠᴀɴᴄᴇᴅ ɢᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴛᴏᴏʟs ✰  
 ➲ 𝟸𝟺/𝟽 ʟᴀɢ-ғʀᴇᴇ ✰
 
-► sᴇɴᴅ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍs!
+► sᴇɴᴅ ᴇʀʀᴏʀ sᴄʀᴇᴇɴsʜᴏᴛ ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍs!
 **"""
 
 
@@ -29,20 +29,20 @@ async def start(_, msg):
           InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{app.username}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/TMZEROO"),
-          InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/NYCreation_Chatzone"),
+          InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/Mrs_Shruti"),
+          InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/ShrutiBotSupport"),
           ],
                [
-                InlineKeyboardButton("ꜱᴇᴄᴏɴᴅ ʙᴏᴛ", url="https://t.me/Music4vcbot?start=_tgr_ImDrXR4xZGNl"),
+                InlineKeyboardButton("ꜱᴇᴄᴏɴᴅ ʙᴏᴛ", url="https://t.me/ShrutixMusicBot?start=help"),
 
 ],
 [
-              InlineKeyboardButton("ᴏᴜʀ ɴᴇᴛᴡᴏʀᴋs", url=f"https://t.me/NoxxNetwork"),
-              InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/CreativeYdv"),
+              InlineKeyboardButton("sʜʀᴜᴛɪ ᴀʟʟ ʙᴏᴛs", url=f"https://t.me/ShrutiAllBots"),
+              InlineKeyboardButton("sʜʀᴜᴛɪ ʙᴏᴛs", url=f"https://t.me/ShrutiBots"),
               ],
               [
-              InlineKeyboardButton("ᴍᴀɴᴀɢᴍᴇɴᴛ", url=f"https://t.me/v2ddos"),
-InlineKeyboardButton("ʜᴇʟᴘ ʙᴏᴛ", url=f"https://t.me/NYCREATION_BOT"),
+              InlineKeyboardButton("sʜʀᴜᴛɪ's ᴡᴏʀʟᴅ", url=f"https://t.me/addlist/_k5_bI2kr68zYzJl"),
+InlineKeyboardButton("ʜᴇʟᴘ ʙᴏᴛ", url=f"https://t.me/ShrutiSupportBot?start=_tgr_LZ_KX58yZWZl"),
 ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)

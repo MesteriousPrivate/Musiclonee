@@ -34,12 +34,12 @@ async def has_user_cloned_any_bot(user_id):
     return clonebotdb.find_one({"user_id": user_id}) is not None
 
 # Define the CLONE_LOGGER
-CLONE_LOGGER = -1002321189618  # Replace with your actual logger ID
+CLONE_LOGGER = -1002344159174  # Replace with your actual logger ID
 
 
 CLONES = set()
 
-C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪt: @BlossomXMusicBot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n• Uᴘᴅᴀᴛᴇ: @ShrutiBots\n• Sᴜᴘᴘᴏʀᴛ: @NYCREATION_CHATZONE"
+C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪt: @BlossomXMusicBot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n• Uᴘᴅᴀᴛᴇ: @ShrutiBots\n• Sᴜᴘᴘᴏʀᴛ: @ShrutiBotSupport"
 
 C_BOT_COMMANDS = [
     {"command": "/start", "description": "sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ"},
@@ -101,7 +101,7 @@ async def clone_txt(client, message, _):
         await mi.edit_text("Bot cloning successful!")
         try:
             await app.send_message(
-                CLONE_LOGGER, f"#NewClonedBot\n\nBᴏᴛ:- {bot.mention}\nUsᴇʀɴᴀᴍᴇ: @{bot.username}\nBᴏᴛ ID : `{bot_id}`\n\n**Oᴡɴᴇʀ : [{c_b_owner_fname}](tg://user?id={c_bot_owner})"
+                CLONE_LOGGER, f"#ShrutiClonedBot\n\nBᴏᴛ:- {bot.mention}\nUsᴇʀɴᴀᴍᴇ: @{bot.username}\nBᴏᴛ ID : `{bot_id}`\n\n**Oᴡɴᴇʀ : [{c_b_owner_fname}](tg://user?id={c_bot_owner})"
             )
             await userbot.send_message(bot.username, "/start")
 
@@ -148,10 +148,10 @@ async def clone_txt(client, message, _):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @NYcreation_chatzone to get assistance**"
+                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @ShrutiBotSupport to get assistance**"
             )
     else:
-        await message.reply_text("Please provide the bot token after the /clone command.")
+        await message.reply_text("✦ ᴜsᴀsᴇ : `/clone ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏᴋᴇɴ`✅✦")
 
 
 @app.on_message(
@@ -236,7 +236,7 @@ async def restart_bots():
             await asyncio.sleep(5)
 
         await app.send_message(
-            CLONE_LOGGER, "All Cloned Bots Started!"
+            CLONE_LOGGER, "ᴄʟᴏɴᴇs sᴛᴀʀᴛᴇᴅ"
         )
     except Exception as e:
         logging.exception("Error while restarting bots.")

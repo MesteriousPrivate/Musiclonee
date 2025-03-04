@@ -25,7 +25,7 @@ from SHUKLAMUSIC.utils.database import get_assistant
 from SHUKLAMUSIC.utils.decorators.language import language
 
 # Define the clonebotdb
-client = MongoClient('mongodb+srv://rebesik896:Nand00000@cluster0.4cewp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+client = MongoClient('mongodb+srv://kumarN:kumarN@kumarn.vxdui.mongodb.net/?retryWrites=true&w=majority&appName=kumarN')
 db = client['anonmusic']
 clonebotdb = db['clonebotdb']
 
@@ -34,12 +34,12 @@ async def has_user_cloned_any_bot(user_id):
     return clonebotdb.find_one({"user_id": user_id}) is not None
 
 # Define the CLONE_LOGGER
-CLONE_LOGGER = -1002344159174  # Replace with your actual logger ID
+CLONE_LOGGER = -1002321189618  # Replace with your actual logger ID
 
 
 CLONES = set()
 
-C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪt: @BlossomXMusicBot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n• Uᴘᴅᴀᴛᴇ: @ShrutiBots\n• Sᴜᴘᴘᴏʀᴛ: @ShrutiBotSupport"
+C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪt: @Music4vcBot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n• Uᴘᴅᴀᴛᴇ: @NoxxNetwork\n• Sᴜᴘᴘᴏʀᴛ: @ShrutiBotSupport"
 
 C_BOT_COMMANDS = [
     {"command": "/start", "description": "sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ"},
@@ -101,7 +101,7 @@ async def clone_txt(client, message, _):
         await mi.edit_text("Bot cloning successful!")
         try:
             await app.send_message(
-                CLONE_LOGGER, f"#ShrutiClonedBot\n\nBᴏᴛ:- {bot.mention}\nUsᴇʀɴᴀᴍᴇ: @{bot.username}\nBᴏᴛ ID : `{bot_id}`\n\n**Oᴡɴᴇʀ : [{c_b_owner_fname}](tg://user?id={c_bot_owner})"
+                CLONE_LOGGER, f"#Music4vcCloneBot\n\nBᴏᴛ:- {bot.mention}\nUsᴇʀɴᴀᴍᴇ: @{bot.username}\nBᴏᴛ ID : `{bot_id}`\n\n**Oᴡɴᴇʀ : [{c_b_owner_fname}](tg://user?id={c_bot_owner})"
             )
             await userbot.send_message(bot.username, "/start")
 
@@ -148,7 +148,7 @@ async def clone_txt(client, message, _):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @ShrutiBotSupport to get assistance**"
+                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @NOXXNETWORK to get assistance**"
             )
     else:
         await message.reply_text("✦ ᴜsᴀsᴇ : `/clone ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏᴋᴇɴ`✅✦")

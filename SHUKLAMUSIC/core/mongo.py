@@ -6,15 +6,15 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://kumarN:kumarN@kumarn.vxdui.mongodb.net/?retryWrites=true&w=majority&appName=kumarN"
+TEMP_MONGODB = "mongodb+srv://yash:shivanshudeo@yk.6bvcjqp.mongodb.net/?retryWrites=true&w=majority&appName=yk"
 
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "ʏᴏᴜʀ ᴍᴏɴɢᴏ ᴅᴇᴀᴅ ɴᴏᴡ ᴜsᴇ ᴛᴇᴍᴘ ᴍᴏɴɢᴏ"
+        "ɴᴏ ᴍᴏɴɢᴏ  ᴅʙ ᴜʀʟ ғᴏᴜɴᴅ.. sᴏ ɪ ᴡɪʟʟ ᴜsᴇ ᴍʏ ᴏᴡɴᴇʀ's ᴍᴏɴɢᴏ ᴅʙ ᴜʀʟ"
     )
     temp_client = Client(
-        "SHUKLAMUSIC",
+        "ChampuMusic",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
@@ -30,5 +30,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.SHUKLAMUSIC
-    pymongodb = _mongo_sync_.SHUKLAMUSIC
+    mongodb = _mongo_async_.Champu
+    pymongodb = _mongo_sync_.Champu
